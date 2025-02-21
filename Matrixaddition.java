@@ -3,12 +3,18 @@ import java.util.Scanner;
 public class Matrixaddition{
  public static void main(String[] args) {
  Scanner sc=new Scanner(System.in);
- System.out.println("Enter the number of rows: ");
+ System.out.println("Enter the number of rows of first matrix: ");
  int m = sc.nextInt();
- System.out.println("Enter the number of coloumns:");
+ System.out.println("Enter the number of coloumns of second matrix:");
  int n=sc.nextInt();
+ System.out.println("Enter the number of rows of first matrix: ");
+ int a = sc.nextInt();
+ System.out.println("Enter the number of coloumns of second matrix:");
+ int b=sc.nextInt();
+ if(m==a && n==b)
+ {
  int[][] m1 = new int[m][n];
- int[][] m2 = new int[m][n];
+ int[][] m2 = new int[a][b];
  int[][] sum = new int[m][n];
  
  System.out.println("Enter the values of first matrix:");
@@ -39,5 +45,10 @@ public class Matrixaddition{
  System.out.print(sum[i][j]+" ");
  }
  }
+ }
+ else
+{
+System.out.println("error");
+}
  }
  }
